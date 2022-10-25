@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_32a1ab9133196239dd34429872026f3b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_32a1ab9133196239dd34429872026f3b" ></div>
+        
+</body>
+<script>    
+    
+            var map_32a1ab9133196239dd34429872026f3b = L.map(
+                "map_32a1ab9133196239dd34429872026f3b",
+                {
+                    center: [-23.765547, -57.475052],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a548abaf65fd682cc534d9a6952cdad3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_32a1ab9133196239dd34429872026f3b);
+        
+    
+            var marker_7c76145050f5a45368fa3bf6ce68be1a = L.marker(
+                [-22.43134015636061, -60.20507812500001],
+                {}
+            ).addTo(map_32a1ab9133196239dd34429872026f3b);
+        
+    
+            var icon_c6760b612309df6b02085e0688fd7f0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7c76145050f5a45368fa3bf6ce68be1a.setIcon(icon_c6760b612309df6b02085e0688fd7f0a);
+        
+    
+        var popup_b04f72be7415220c8a3fac68da4f4b41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3288138263a501ededa5135878f074a9 = $(`<div id="html_3288138263a501ededa5135878f074a9" style="width: 100.0%; height: 100.0%;">             <img src="https://m1.paperblog.com/i/47/473929/poster-conan-el-barbaro-3d-L-VdXuEC.jpeg" width="100" class="center">             <h1>calaveras</h1>             <p>paseo por calaveras</p>             </div>`)[0];
+                popup_b04f72be7415220c8a3fac68da4f4b41.setContent(html_3288138263a501ededa5135878f074a9);
+            
+        
+
+        marker_7c76145050f5a45368fa3bf6ce68be1a.bindPopup(popup_b04f72be7415220c8a3fac68da4f4b41)
+        ;
+
+        
+    
+    
+            var circle_1c60f8ae0fa56145b5d6baab3de2f887 = L.circle(
+                [-22.43134015636061, -60.20507812500001],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_32a1ab9133196239dd34429872026f3b);
+        
+</script>
