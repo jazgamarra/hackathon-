@@ -32,7 +32,7 @@ class LugaresCulturales(db.Model):
 'darkgreen', 'lightgreen', 'red', 'darkblue', 'white', 'orange', 'lightgray', 'black', 'beige', 'purple'}.
 '''
 
-@app.route('/')
+@app.route('/mapa')
 def crear_mapa():
     mapa=folium.Map(location=[-23.765547, -57.475052], zoom_start=6)
     lista=LugaresCulturales.query.all()
@@ -137,7 +137,46 @@ def filtrar():
 def vista_filtrada():
     return render_template('vista_filtrada.html')
 
+@app.route('/', methods=['GET','POST'])
+def index():
+     #definir en que parte del mapa el zoom
+    mapa=folium.Map(location=[-25.302148501254027, -57.580945507743685], zoom_start=12)
+    #post es que le llega algo del front al back
+    if request.method=='POST':
+        #crear una variable con lo que llego del front
+        categoria_form=request.form['categoria']
+        #consultar los lugares culturales
+        consultar_lugar=db.session.query(LugaresCulturales)
+        #definimos que variables deben coincidir
+        filtro_por_categoria=LugaresCulturales.categoria==categoria_form
+        #filtrar con el filtro que definimos arriba
+        lista_lugares=consultar_lugar.filter(filtro_por_categoria).all()
+
+        for lugar in lista_lugares:
+            coor_marcador=[lugar.latitud, lugar.longitud]
+            folium.Marker(
+            location=coor_marcador, 
+            popup=f'''
+            <img src="{lugar.imagen}" width="100" class="center">
+            <h1>{lugar.nombre}</h1>
+            <p>{lugar.descripcion}</p>
+            ''', 
+                icon=folium.Icon(color="red", icon="heart-empty"),
+            ).add_to(mapa)
+        folium.Circle(
+            location=[lugar.latitud,lugar.longitud],
+            radius=120, 
+            fill_color='darkred', 
+            fill_opacity=0.1, 
+            color='none'
+        ).add_to(mapa)
+
+    #guardamos en un html distinto
+    mapa.save('templates/vista_filtrada.html')
+    
+    # retornamos el index 
+    return render_template('index.html')
 
 if __name__ == '__main__':
     db.create_all()
-    app.run(debug=True, port=8080)
+    app.run(debug=True)
