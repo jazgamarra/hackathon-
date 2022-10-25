@@ -3,6 +3,7 @@
 ## Integrantes
 
 - Laura
+- Cynthia
 - Wendy
 - Natalia
 - Ivonne
