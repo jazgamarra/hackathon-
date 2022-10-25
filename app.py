@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 import folium
 from geopy.geocoders import Nominatim
+from matplotlib.container import Container
 
 app=Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
@@ -65,16 +66,8 @@ def registro():
         categoria=request.form['categoria']
         latitud=request.form['latitud']
         longitud=request.form['longitud']
-
-        #creamos una funcion para poder localizar
-        geolocator=Nominatim(user_agent="Ravenclaw")
-        #buscamos la ubi en geolocator
-        location = geolocator.reverse(latitud + "," + longitud)
-
-        address = location.raw['address']
-
-        departamento = address.get('state', '')
-
+        departamento=request.form['departamento']
+    
 
         lugar=LugaresCulturales(nombre, descripcion, imagen, categoria, latitud, longitud, departamento)
         print(lugar.nombre, lugar.descripcion)
@@ -82,11 +75,6 @@ def registro():
         db.session.commit()
 
     return render_template('mapa_registro.html')
-
-@app.route('/lista-lugares')
-def listar():
-    lista = LugaresCulturales.query.all()
-    return render_template('lista_lugar.html', lista=lista)
 
 @app.route('/borrar/<int:id>')
 def borrar(id):
@@ -173,10 +161,32 @@ def index():
 
     #guardamos en un html distinto
     mapa.save('templates/vista_filtrada.html')
-    
+        
     # retornamos el index 
     return render_template('index.html')
 
+@app.route('/lista-lugares')
+def listar():
+    lista =  LugaresCulturales.query.all() 
+    return render_template('lista_lugar.html', lista=lista)
+        
+def lista_por_dpto():
+    coordillera = []
+    central = []
+    paraguari = []
+    lista =  LugaresCulturales.query.all() 
+    
+    for lugar in lista:
+        if lugar.departamento == 'central': 
+            central.append(lugar)
+        elif lugar.departamento == 'coordillera': 
+            coordillera.append(lugar)
+        elif lugar.departamento == 'paraguari': 
+            paraguari.append(lugar)
+    
+    return [central, paraguari, coordillera]
+    
+    
 if __name__ == '__main__':
     db.create_all()
     app.run(debug=True)
