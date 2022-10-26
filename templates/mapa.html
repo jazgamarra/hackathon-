@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_c7671ee47e9b7dd5a31e265e75b24fc7 {
+                #map_5427c0fdede2d02d4ee19ed02a4d01aa {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,17 +35,17 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_c7671ee47e9b7dd5a31e265e75b24fc7" ></div>
+            <div class="folium-map" id="map_5427c0fdede2d02d4ee19ed02a4d01aa" ></div>
         
 </body>
 <script>    
     
-            var map_c7671ee47e9b7dd5a31e265e75b24fc7 = L.map(
-                "map_c7671ee47e9b7dd5a31e265e75b24fc7",
+            var map_5427c0fdede2d02d4ee19ed02a4d01aa = L.map(
+                "map_5427c0fdede2d02d4ee19ed02a4d01aa",
                 {
                     center: [-23.765547, -57.475052],
                     crs: L.CRS.EPSG3857,
-                    zoom: 6,
+                    zoom: 7,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -55,9 +55,598 @@
 
         
     
-            var tile_layer_7b322882f4400d2efdc5e369797341af = L.tileLayer(
+            var tile_layer_afb4e154ea8f8296fc0ca079049360da = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_c7671ee47e9b7dd5a31e265e75b24fc7);
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_6a8271ddf0339662af77596a781fb500 = L.marker(
+                [-25.914204216207594, -56.1534334860266],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_f0a541f34f742722ea08b7d8955c6d8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6a8271ddf0339662af77596a781fb500.setIcon(icon_f0a541f34f742722ea08b7d8955c6d8f);
+        
+    
+        var popup_9121ea2706940539eb47bf55f43c6752 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c7f73aa2df79f2677486d4cd720652a = $(`<div id="html_6c7f73aa2df79f2677486d4cd720652a" style="width: 100.0%; height: 100.0%;">                 <img src="https://turista.s3-sa-east-1.amazonaws.com/img/bg-img/cerro-3-kandu-1.jpg" width="300" height="200" class="center">                 <h2>Cerro Tres Kandú</h2>                 <p>Esta ubicado en el departamento Guairá , además es el punto más alto del territorio de la República del Paraguay.</p>                 </div>`)[0];
+            popup_9121ea2706940539eb47bf55f43c6752.setContent(html_6c7f73aa2df79f2677486d4cd720652a);
+        
+
+        marker_6a8271ddf0339662af77596a781fb500.bindPopup(popup_9121ea2706940539eb47bf55f43c6752)
+        ;
+
+        
+    
+    
+            var circle_ba5c4a260575f0af2909be45024a95bd = L.circle(
+                [-25.914204216207594, -56.1534334860266],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_d6ab712f0907bb20bffc94e3719cc622 = L.marker(
+                [-25.565503800638734, -57.2832477285861],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_023bdd30e2d1ee83d636fdfb51809f03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d6ab712f0907bb20bffc94e3719cc622.setIcon(icon_023bdd30e2d1ee83d636fdfb51809f03);
+        
+    
+        var popup_fc7195e9c3543d5d283d5089ca7c19fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_139e43da1ed7493ac58d8be43db6db13 = $(`<div id="html_139e43da1ed7493ac58d8be43db6db13" style="width: 100.0%; height: 100.0%;">                 <img src="https://www.adndigital.com.py/wp-content/uploads/2021/04/YAGUAR%C3%93N.jpg" width="300" height="200" class="center">                 <h2>Cero Yaguarón</h2>                 <p>Esta ubicado en el departamento de Paraguarí  con una altura de más de 300 metros sobre el nivel del mar por ello, lo convierte en el mejor sitio para observar la ciudad y las serranías de la cordillera de los Altos, que rodea la región. </p>                 </div>`)[0];
+            popup_fc7195e9c3543d5d283d5089ca7c19fc.setContent(html_139e43da1ed7493ac58d8be43db6db13);
+        
+
+        marker_d6ab712f0907bb20bffc94e3719cc622.bindPopup(popup_fc7195e9c3543d5d283d5089ca7c19fc)
+        ;
+
+        
+    
+    
+            var circle_515da9ccd72661c761e6577e4ae1b625 = L.circle(
+                [-25.565503800638734, -57.2832477285861],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_f0e28b9d96d98c40f5b8918b4098b445 = L.marker(
+                [-25.898299868747046, -56.15000025854454],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_0cb2bed493350a3777fa7e919c6d91c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f0e28b9d96d98c40f5b8918b4098b445.setIcon(icon_0cb2bed493350a3777fa7e919c6d91c9);
+        
+    
+        var popup_383dc670c004b2aed284090cbc3b6a5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a5c7b3019b2ce547dc29d979599e376 = $(`<div id="html_7a5c7b3019b2ce547dc29d979599e376" style="width: 100.0%; height: 100.0%;">                 <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/c6/cd/22/vista-desde-el-cerro.jpg" width="300" height="200" class="center">                 <h2>Cerro Peró </h2>                 <p>Esta ubicado en Paraguarí. Ofrece una vista completa de la ciudad, en la cima posee una gran planicie que hoy en día se utiliza como mirador natural y desde ahí puede divisarse las otras elevaciones importantes de Paraguarí </p>                 </div>`)[0];
+            popup_383dc670c004b2aed284090cbc3b6a5b.setContent(html_7a5c7b3019b2ce547dc29d979599e376);
+        
+
+        marker_f0e28b9d96d98c40f5b8918b4098b445.bindPopup(popup_383dc670c004b2aed284090cbc3b6a5b)
+        ;
+
+        
+    
+    
+            var circle_17fcfbc5f6b3f1eac64e87be70ee320e = L.circle(
+                [-25.898299868747046, -56.15000025854454],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_c66c45bb6478255cea0daca0045055c8 = L.marker(
+                [-25.280366554915677, -57.636325873217906],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_c97bbb3d62d3869a36e674c4ad178c1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c66c45bb6478255cea0daca0045055c8.setIcon(icon_c97bbb3d62d3869a36e674c4ad178c1c);
+        
+    
+        var popup_6a85db01e7d99959ed020c6a1e0b0e4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e3387a2fddb954bb80f8b572760f8b6 = $(`<div id="html_9e3387a2fddb954bb80f8b572760f8b6" style="width: 100.0%; height: 100.0%;">                 <img src="https://i0.wp.com/diarioasuncion.com/wp-content/uploads/2018/05/muestra-sobre-esclavitud-en-la-casa-de-la-independencia-diarioasuncion.jpg" width="300" height="200" class="center">                 <h2>Casa de la Independencia </h2>                 <p>Casa de estilo colonial que tiene una importancia histórica ya que los principales protagonistas de la independencia del país la usaron como sede secreta de reuniones.</p>                 </div>`)[0];
+            popup_6a85db01e7d99959ed020c6a1e0b0e4d.setContent(html_9e3387a2fddb954bb80f8b572760f8b6);
+        
+
+        marker_c66c45bb6478255cea0daca0045055c8.bindPopup(popup_6a85db01e7d99959ed020c6a1e0b0e4d)
+        ;
+
+        
+    
+    
+            var circle_a39919170f486b5f3b1935e6c291e584 = L.circle(
+                [-25.280366554915677, -57.636325873217906],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_34b2c0c79468493355ee6c4fab27f1cc = L.marker(
+                [-27.064767358141818, -58.507574486671395],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_bffff2767e7ccb595cb7836dc5130d73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_34b2c0c79468493355ee6c4fab27f1cc.setIcon(icon_bffff2767e7ccb595cb7836dc5130d73);
+        
+    
+        var popup_63d302aff403ec221a58caf86972431e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7d55ed544d5180995397d3c886e9aff = $(`<div id="html_d7d55ed544d5180995397d3c886e9aff" style="width: 100.0%; height: 100.0%;">                 <img src="https://fastly.4sqi.net/img/general/600x600/pSXwXtvMUTcCq-pciporTsA-sRcbpdm8O0bIWKfUAQU.jpg" width="300" height="200" class="center">                 <h2>Fortaleza de Humaitá</h2>                 <p>Durante la Guerra de la Triple Alianza esta fortificación controlaba el acceso por vía fluvial a la capital paraguaya, constituyéndose en el más poderoso y temido complejo defensivo paraguayo.</p>                 </div>`)[0];
+            popup_63d302aff403ec221a58caf86972431e.setContent(html_d7d55ed544d5180995397d3c886e9aff);
+        
+
+        marker_34b2c0c79468493355ee6c4fab27f1cc.bindPopup(popup_63d302aff403ec221a58caf86972431e)
+        ;
+
+        
+    
+    
+            var circle_49ff0cc77dab94e0a2a94f54e131f58d = L.circle(
+                [-27.064767358141818, -58.507574486671395],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_01fc332ad16df28a5e874ad55aa37c90 = L.marker(
+                [-25.282008831609094, -57.63412642009885],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_5e5bbf3f2a8c50b47051e5305e660fa2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_01fc332ad16df28a5e874ad55aa37c90.setIcon(icon_5e5bbf3f2a8c50b47051e5305e660fa2);
+        
+    
+        var popup_96d68c37253248c2c737554fc30a56b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_032c8b920c3d3d4b61919322f9a6572e = $(`<div id="html_032c8b920c3d3d4b61919322f9a6572e" style="width: 100.0%; height: 100.0%;">                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/a6/b4/8a/el-panteon-nacional-de.jpg?w=800&h=-1&s=1" width="300" height="200" class="center">                 <h2>Panteón Nacional de los Héroes</h2>                 <p>Es el mausoleo de la patria, donde reposan los restos mortales de los héroes de la historia paraguaya. Es una joya arquitectónica de gran valor artístico, cultural y patrimonial.</p>                 </div>`)[0];
+            popup_96d68c37253248c2c737554fc30a56b8.setContent(html_032c8b920c3d3d4b61919322f9a6572e);
+        
+
+        marker_01fc332ad16df28a5e874ad55aa37c90.bindPopup(popup_96d68c37253248c2c737554fc30a56b8)
+        ;
+
+        
+    
+    
+            var circle_298425b0df8971d30c99fad35766a06c = L.circle(
+                [-25.282008831609094, -57.63412642009885],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_ea7720891a566816e73b55b168d00bbd = L.marker(
+                [-25.27964915092725, -57.633686759726146],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_5906c27e836204352500ff0427779a60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ea7720891a566816e73b55b168d00bbd.setIcon(icon_5906c27e836204352500ff0427779a60);
+        
+    
+        var popup_38d4036f7543a4dbff7aa8165302b600 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9d175ac56e8b28d5ace50ee04bcfc3a = $(`<div id="html_e9d175ac56e8b28d5ace50ee04bcfc3a" style="width: 100.0%; height: 100.0%;">                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Cabildo_Asuncion.JPG/800px-Cabildo_Asuncion.JPG" width="300" height="200" class="center">                 <h2> El Cabildo - Centro Cultural de la Republica</h2>                 <p>El Cabildo en Asunción tiene por principal objetivo el fortalecimiento de la conciencia y memoria histórica, potenciando su condición de edificio de valor monumental.</p>                 </div>`)[0];
+            popup_38d4036f7543a4dbff7aa8165302b600.setContent(html_e9d175ac56e8b28d5ace50ee04bcfc3a);
+        
+
+        marker_ea7720891a566816e73b55b168d00bbd.bindPopup(popup_38d4036f7543a4dbff7aa8165302b600)
+        ;
+
+        
+    
+    
+            var circle_796d9cbce274fe607ee15b0252ff0426 = L.circle(
+                [-25.27964915092725, -57.633686759726146],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_3cf53b259fdfd32f8715cb6847bf9fce = L.marker(
+                [-25.28046715245711, -57.55941980271273],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_15258c7ca642aeb16b9a0bc2ccb36a31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3cf53b259fdfd32f8715cb6847bf9fce.setIcon(icon_15258c7ca642aeb16b9a0bc2ccb36a31);
+        
+    
+        var popup_3754725e40b1e54dc20f3f7473311c88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff93131e4d0b05046f3f8d58da34c8a8 = $(`<div id="html_ff93131e4d0b05046f3f8d58da34c8a8" style="width: 100.0%; height: 100.0%;">                 <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/97/d6/8b/caption.jpg" width="300" height="200" class="center">                 <h2>Centro de Artes Visuales - Museo del Barro</h2>                 <p>Museo que exhibe obras de alfarería, reliquias antiguas y arte contemporáneo de Latinoamérica y Paraguay.</p>                 </div>`)[0];
+            popup_3754725e40b1e54dc20f3f7473311c88.setContent(html_ff93131e4d0b05046f3f8d58da34c8a8);
+        
+
+        marker_3cf53b259fdfd32f8715cb6847bf9fce.bindPopup(popup_3754725e40b1e54dc20f3f7473311c88)
+        ;
+
+        
+    
+    
+            var circle_21cf354320d43bfb43130d6e6c30a78e = L.circle(
+                [-25.28046715245711, -57.55941980271273],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_959d3c704647587c63b7128a8bd63e3a = L.marker(
+                [-25.278047655322283, -57.637412729633006],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_da235a119edb0e4d1decba36879b24d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_959d3c704647587c63b7128a8bd63e3a.setIcon(icon_da235a119edb0e4d1decba36879b24d8);
+        
+    
+        var popup_ecbb913d1316e122435fc6d81db64c0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b2a455588422fce1ffd8189f2a25d07 = $(`<div id="html_1b2a455588422fce1ffd8189f2a25d07" style="width: 100.0%; height: 100.0%;">                 <img src="https://miro.medium.com/max/1400/1*OdEBttGEaA8e0pS9DkyrFQ.jpeg" width="300" height="200" class="center">                 <h2>Museo Memoria de la Ciudad</h2>                 <p>Presenta diferentes lecturas de la vida de Asunción narrandola a partir de su fundación.</p>                 </div>`)[0];
+            popup_ecbb913d1316e122435fc6d81db64c0c.setContent(html_1b2a455588422fce1ffd8189f2a25d07);
+        
+
+        marker_959d3c704647587c63b7128a8bd63e3a.bindPopup(popup_ecbb913d1316e122435fc6d81db64c0c)
+        ;
+
+        
+    
+    
+            var circle_bddb52af767f125aa9b868c6fdbf242a = L.circle(
+                [-25.278047655322283, -57.637412729633006],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_4e3dc651b77549a5c57717e947a16ef0 = L.marker(
+                [-25.445476617836697, -54.633878960314576],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_dae98ab2e97831295c062929e425f36e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4e3dc651b77549a5c57717e947a16ef0.setIcon(icon_dae98ab2e97831295c062929e425f36e);
+        
+    
+        var popup_d9fba336aff30f4cdca982e11058dfd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f079189bcc833bbcf366dce3e6abd7a8 = $(`<div id="html_f079189bcc833bbcf366dce3e6abd7a8" style="width: 100.0%; height: 100.0%;">                 <img src="https://visitparaguay.travel/v1/upload/destino_actividad_alternativa_imagen/00381995_82204609_579F6C5EDBDEE_B.jpg" width="300" height="200" class="center">                 <h2>Museo de Itaipu Tierra Guaraní</h2>                 <p>Un paseo por el río Paraná a través del tiempo y su naturaleza</p>                 </div>`)[0];
+            popup_d9fba336aff30f4cdca982e11058dfd9.setContent(html_f079189bcc833bbcf366dce3e6abd7a8);
+        
+
+        marker_4e3dc651b77549a5c57717e947a16ef0.bindPopup(popup_d9fba336aff30f4cdca982e11058dfd9)
+        ;
+
+        
+    
+    
+            var circle_27a6e35bc59f8b653375d0e958bf1774 = L.circle(
+                [-25.445476617836697, -54.633878960314576],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_b93e63f8e6841c99c42a599d7f9820a4 = L.marker(
+                [-26.10345210169047, -56.80205372238235],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_f1fe8fe5c2ca9e558bf7dbf1efdbe8dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b93e63f8e6841c99c42a599d7f9820a4.setIcon(icon_f1fe8fe5c2ca9e558bf7dbf1efdbe8dd);
+        
+    
+        var popup_2afe9d1b85d486ca28034bab9afbab93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7ea353ce422a9b75d81787a59584054 = $(`<div id="html_b7ea353ce422a9b75d81787a59584054" style="width: 100.0%; height: 100.0%;">                 <img src="https://arc-anglerfish-arc2-prod-abccolor.s3.amazonaws.com/public/EKILMGPATNEZFG735NX2KR2RDA.jpg" width="300" height="200" class="center">                 <h2>Museo La Rosada</h2>                 <p>Colección parcial de objetos que fueron parte de la Fábrica de Hierro de Ybycuí</p>                 </div>`)[0];
+            popup_2afe9d1b85d486ca28034bab9afbab93.setContent(html_b7ea353ce422a9b75d81787a59584054);
+        
+
+        marker_b93e63f8e6841c99c42a599d7f9820a4.bindPopup(popup_2afe9d1b85d486ca28034bab9afbab93)
+        ;
+
+        
+    
+    
+            var circle_9bdd2e23b1285bc6a9058f29563dc286 = L.circle(
+                [-26.10345210169047, -56.80205372238235],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_374bd9436f3600688600a583348b0014 = L.marker(
+                [-25.350398361055316, -57.44879256031656],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_678d31c95daeea83c3a306b8a61409dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_374bd9436f3600688600a583348b0014.setIcon(icon_678d31c95daeea83c3a306b8a61409dc);
+        
+    
+        var popup_39a684a878c1bf9f09ade94963037ad5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e45a2655dbf2f22059018be504100ae = $(`<div id="html_1e45a2655dbf2f22059018be504100ae" style="width: 100.0%; height: 100.0%;">                 <img src="https://media-cdn.tripadvisor.com/media/photo-s/07/fa/35/a6/museo-mitologico-ramon.jpg" width="300" height="200" class="center">                 <h2>Museo Mitológico Ramón Elías</h2>                 <p>Es un testimonio visual de los  mitos paraguayos </p>                 </div>`)[0];
+            popup_39a684a878c1bf9f09ade94963037ad5.setContent(html_1e45a2655dbf2f22059018be504100ae);
+        
+
+        marker_374bd9436f3600688600a583348b0014.bindPopup(popup_39a684a878c1bf9f09ade94963037ad5)
+        ;
+
+        
+    
+    
+            var circle_0f3fdaec53ec0b952015770eb9d99e6d = L.circle(
+                [-25.350398361055316, -57.44879256031656],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_ca98b48b1c8d12513248d30fb42d8c86 = L.marker(
+                [-25.19902877203457, -56.783375915342525],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_c6851cc47d36cac7c3bcce8fae978001 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ca98b48b1c8d12513248d30fb42d8c86.setIcon(icon_c6851cc47d36cac7c3bcce8fae978001);
+        
+    
+        var popup_f0c4375f1ffeb006c027eb497dd5731c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4cbd74acfc3e4ce00fd0428a9ff3d581 = $(`<div id="html_4cbd74acfc3e4ce00fd0428a9ff3d581" style="width: 100.0%; height: 100.0%;">                 <img src="https://s3.amazonaws.com/arc-wordpress-client-uploads/lanacionpy/wp-content/uploads/2017/09/06051103/Vapor-Cue%CC%81-048.jpg" width="300" height="200" class="center">                 <h2>Museo Naval Vapor Cué</h2>                 <p>Un verdadero monumento y testimonio silencioso sobre nuestra historia.</p>                 </div>`)[0];
+            popup_f0c4375f1ffeb006c027eb497dd5731c.setContent(html_4cbd74acfc3e4ce00fd0428a9ff3d581);
+        
+
+        marker_ca98b48b1c8d12513248d30fb42d8c86.bindPopup(popup_f0c4375f1ffeb006c027eb497dd5731c)
+        ;
+
+        
+    
+    
+            var circle_a32020567b7a435d49e502afcadac18f = L.circle(
+                [-25.19902877203457, -56.783375915342525],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_00b534bcb19d320b5a3e867a547e4081 = L.marker(
+                [-22.35238347707129, -60.03534823862991],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_613bd941fe9e0516109294126f9cc091 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_00b534bcb19d320b5a3e867a547e4081.setIcon(icon_613bd941fe9e0516109294126f9cc091);
+        
+    
+        var popup_1d762f06247659df5e6b4fbfe0918b02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_588e196650718ff0f63bdfcb058a9ea3 = $(`<div id="html_588e196650718ff0f63bdfcb058a9ea3" style="width: 100.0%; height: 100.0%;">                 <img src="https://www.visitparaguay.travel/v1/upload/experiencia_circuito_alternativo_imagen/03498723_94933257_597F450D98695_B.jpg" width="300" height="200" class="center">                 <h2>Museo Jakob Unger</h2>                 <p>Exposiciones etnobotánicas, zoológicas y culturales</p>                 </div>`)[0];
+            popup_1d762f06247659df5e6b4fbfe0918b02.setContent(html_588e196650718ff0f63bdfcb058a9ea3);
+        
+
+        marker_00b534bcb19d320b5a3e867a547e4081.bindPopup(popup_1d762f06247659df5e6b4fbfe0918b02)
+        ;
+
+        
+    
+    
+            var circle_1861515b0f28e999b9cdb34ccc82aa59 = L.circle(
+                [-22.35238347707129, -60.03534823862991],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_92d5068e1530993479dc9cb77d51d69e = L.marker(
+                [-22.76862489330677, -59.94108451965585],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_d010096156c05d06f51908c0869b7a24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_92d5068e1530993479dc9cb77d51d69e.setIcon(icon_d010096156c05d06f51908c0869b7a24);
+        
+    
+        var popup_3c975e0c3b3a5d65e3889e0a99324674 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffc8cbf2ef9abe8de5ca5d1f387b2014 = $(`<div id="html_ffc8cbf2ef9abe8de5ca5d1f387b2014" style="width: 100.0%; height: 100.0%;">                 <img src="https://www.visitparaguay.travel/v1/upload/experiencia_circuito_alternativo_imagen/07703656_01011978_61FD7C499E8D1_B.jpg" width="300" height="200" class="center">                 <h2> Museo Fortin Boqueron</h2>                 <p>Colección de objetos de la Guerra del Chaco</p>                 </div>`)[0];
+            popup_3c975e0c3b3a5d65e3889e0a99324674.setContent(html_ffc8cbf2ef9abe8de5ca5d1f387b2014);
+        
+
+        marker_92d5068e1530993479dc9cb77d51d69e.bindPopup(popup_3c975e0c3b3a5d65e3889e0a99324674)
+        ;
+
+        
+    
+    
+            var circle_92acb3eb350833fc3f3954c3417c1413 = L.circle(
+                [-22.76862489330677, -59.94108451965585],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_3d62a3feeb395036155e9d02605c636e = L.marker(
+                [-25.97714787463118, -56.73062286271081],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_caa5f121f434193d8e49bbe3a4d60ab2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3d62a3feeb395036155e9d02605c636e.setIcon(icon_caa5f121f434193d8e49bbe3a4d60ab2);
+        
+    
+        var popup_50f45359782969d4b1948848639c5c86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74e05f97b8ed22b22f7457b5c262a19c = $(`<div id="html_74e05f97b8ed22b22f7457b5c262a19c" style="width: 100.0%; height: 100.0%;">                 <img src="https://cnnespanol.cnn.com/wp-content/uploads/2021/09/210909164630-reconecta-paraguay-agua-salto-cristal-cnne-00003022-full-169.png" width="300" height="200" class="center">                 <h2>Salto Crista</h2>                 <p>Esta ubicado en la ciudad de Ybycuí, se destaca por su particular belleza natural. El lugar ofrece una magnífica oportunidad para apreciar de la fauna y flora autóctonas de la zona tiene 45 metros de caida de aguas cristalinas.</p>                 </div>`)[0];
+            popup_50f45359782969d4b1948848639c5c86.setContent(html_74e05f97b8ed22b22f7457b5c262a19c);
+        
+
+        marker_3d62a3feeb395036155e9d02605c636e.bindPopup(popup_50f45359782969d4b1948848639c5c86)
+        ;
+
+        
+    
+    
+            var circle_314e94686b0f118e182f4f2d28ac9bf4 = L.circle(
+                [-25.97714787463118, -56.73062286271081],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_10ae309ddcba21f3aa82b2180351904c = L.marker(
+                [-25.278053, -57.637445],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_ba3b3295bc2a6bba53f36d601ada0a7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_10ae309ddcba21f3aa82b2180351904c.setIcon(icon_ba3b3295bc2a6bba53f36d601ada0a7e);
+        
+    
+        var popup_d95a903213122e341090f6f4dd16d0ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d404f9bfff2e81ff99d08aa01dd10279 = $(`<div id="html_d404f9bfff2e81ff99d08aa01dd10279" style="width: 100.0%; height: 100.0%;">                 <img src="https://www.dx.com.py/wp-content/uploads/2019/02/museo-de-las-memorias-2-1024x683.jpg" width="300" height="200" class="center">                 <h2>Museo de la memoria</h2>                 <p> El Museo de las Memorias recuerda las represiones y violaciones a los derechos humanos, durante el gobierno de Alfredo Stroessner. Funciona</p>                 </div>`)[0];
+            popup_d95a903213122e341090f6f4dd16d0ee.setContent(html_d404f9bfff2e81ff99d08aa01dd10279);
+        
+
+        marker_10ae309ddcba21f3aa82b2180351904c.bindPopup(popup_d95a903213122e341090f6f4dd16d0ee)
+        ;
+
+        
+    
+    
+            var circle_ee001c467dc5a0d4730f67b0d164f36a = L.circle(
+                [-25.278053, -57.637445],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_e44def8eb75426722dd29757b87d1d37 = L.marker(
+                [-25.27720242991453, -57.637276088562245],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_9535b43cdd99fac2c6c1774f95d12936 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e44def8eb75426722dd29757b87d1d37.setIcon(icon_9535b43cdd99fac2c6c1774f95d12936);
+        
+    
+        var popup_e3aa1bbe504d82cf705ea00c2c347e48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b5dcfdb8d3bafa4e230aee786dc6080 = $(`<div id="html_7b5dcfdb8d3bafa4e230aee786dc6080" style="width: 100.0%; height: 100.0%;">                 <img src="https://www.abc.com.py/resizer/F9Z6ftI9MO61vcK9GD_QvCrFS7w=/fit-in/770x495/smart/filters:format(webp):format(webp)/arc-anglerfish-arc2-prod-abccolor.s3.amazonaws.com/public/FLIZFMK3KBHI3CH4YVLPFCN6D4.jpg" width="300" height="200" class="center">                 <h2> Palacio de López</h2>                 <p> Es el Palacio de Gobierno, sede del despacho del Presidente de la República del Paraguay y de las secretarías del Poder Ejecutivo. Es uno de los edificios más emblemáticos de la capital paraguaya. Fue construido en estilo neoclásico con cierta influencia palladiana.</p>                 </div>`)[0];
+            popup_e3aa1bbe504d82cf705ea00c2c347e48.setContent(html_7b5dcfdb8d3bafa4e230aee786dc6080);
+        
+
+        marker_e44def8eb75426722dd29757b87d1d37.bindPopup(popup_e3aa1bbe504d82cf705ea00c2c347e48)
+        ;
+
+        
+    
+    
+            var circle_f1e989a78751f63d785bc8bd49466a23 = L.circle(
+                [-25.27720242991453, -57.637276088562245],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var marker_c39733039c845f3e7a38585c419d4aa0 = L.marker(
+                [-25.28939906905509, -57.63303957321777],
+                {}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
+        
+    
+            var icon_819f47a98012f7f577ee6fb3ce49aaa9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c39733039c845f3e7a38585c419d4aa0.setIcon(icon_819f47a98012f7f577ee6fb3ce49aaa9);
+        
+    
+        var popup_fa05ebece969c12e2a43f862a5bc09da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_197238f65dcee83bb748d7d3b26dd000 = $(`<div id="html_197238f65dcee83bb748d7d3b26dd000" style="width: 100.0%; height: 100.0%;">                 <img src="https://lh5.googleusercontent.com/p/AF1QipP8M-32JiD8FVad3yBAoXgh5881cdJ_0TP33YMy=w408-h306-k-no" width="300" height="200" class="center">                 <h2>Museo de Arte Sacro</h2>                 <p>Es un museo con una colección de piezas de escultura del arte sacro del barroco hispano-guaraní, situado en la ciudad de Asunción, Paraguay. El museo se encuentra emplazado en la Villa Lina, una edificación de estilo ecléctico de principios de siglo XX</p>                 </div>`)[0];
+            popup_fa05ebece969c12e2a43f862a5bc09da.setContent(html_197238f65dcee83bb748d7d3b26dd000);
+        
+
+        marker_c39733039c845f3e7a38585c419d4aa0.bindPopup(popup_fa05ebece969c12e2a43f862a5bc09da)
+        ;
+
+        
+    
+    
+            var circle_6afcad8b5530380dbb1fe5038b17761b = L.circle(
+                [-25.28939906905509, -57.63303957321777],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5427c0fdede2d02d4ee19ed02a4d01aa);
         
 </script>

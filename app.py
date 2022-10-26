@@ -41,8 +41,8 @@ def crear_mapa():
         folium.Marker(
             location=[lugar.latitud,lugar.longitud], 
             popup=f'''
-            <img src="{lugar.imagen}>
-            <h1>{lugar.nombre}</h1>
+            <img src="{lugar.imagen}" width="300" height="200" class="center">
+            <h2>{lugar.nombre}</h2>
             <p>{lugar.descripcion}</p>
             ''', 
                 icon=folium.Icon(color="red", icon="heart-empty"),
@@ -103,8 +103,8 @@ def filtrar():
             folium.Marker(
             location=coor_marcador, 
             popup=f'''
-            <img src="{lugar.imagen}" width="100" class="center">
-            <h1>{lugar.nombre}</h1>
+            <img src="{lugar.imagen}" width="300" height="200" class="center">
+            <h2>{lugar.nombre}</h2>
             <p>{lugar.descripcion}</p>
             ''', 
                 icon=folium.Icon(color="red", icon="heart-empty"),
@@ -128,7 +128,7 @@ def vista_filtrada():
 @app.route('/', methods=['GET','POST'])
 def index():
     #definir en que parte del mapa el zoom
-    mapa=folium.Map(location=[-25.302148501254027, -57.580945507743685], zoom_start=12)
+    mapa=folium.Map(location=[-23.765547, -57.475052], zoom_start=7)
     #post es que le llega algo del front al back
     if request.method=='POST':
         #crear una variable con lo que llego del front
@@ -145,8 +145,8 @@ def index():
             folium.Marker(
             location=coor_marcador, 
             popup=f'''
-            <img src="{lugar.imagen}" width="100" class="center">
-            <h1>{lugar.nombre}</h1>
+            <img src="{lugar.imagen}" width="300" height="200" class="center">
+            <h2>{lugar.nombre}</h2>
             <p>{lugar.descripcion}</p>
             ''', 
                 icon=folium.Icon(color="red", icon="heart-empty"),
@@ -158,7 +158,26 @@ def index():
             fill_opacity=0.1, 
             color='none'
         ).add_to(mapa)
-
+    else: 
+        lista=LugaresCulturales.query.all()
+        for lugar in lista:
+            folium.Marker(
+                location=[lugar.latitud,lugar.longitud], 
+                popup=f'''
+                <img src="{lugar.imagen}" width="300" height="200" class="center">
+                <h2>{lugar.nombre}</h2>
+                <p>{lugar.descripcion}</p>
+                ''', 
+                    icon=folium.Icon(color="red", icon="heart-empty"),
+                ).add_to(mapa)
+            folium.Circle(
+                location=[lugar.latitud,lugar.longitud],
+                radius=120, 
+                fill_color='darkred', 
+                fill_opacity=0.1, 
+                color='none'
+            ).add_to(mapa)
+        mapa.save('templates/mapa.html')
     #guardamos en un html distinto
     mapa.save('templates/vista_filtrada.html')
     
