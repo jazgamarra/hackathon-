@@ -164,7 +164,7 @@ def index():
         
     # retornamos el index 
     return render_template('index.html')
-
+ 
 @app.route('/lista-lugares')
 def listar():
     lista =  LugaresCulturales.query.all() 
@@ -178,7 +178,7 @@ def lista_por_dpto():
     
     for lugar in lista:
         if lugar.departamento == 'central': 
-            central.append(lugar)
+            central.append(lugar)     
         elif lugar.departamento == 'coordillera': 
             coordillera.append(lugar)
         elif lugar.departamento == 'paraguari': 

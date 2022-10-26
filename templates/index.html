@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tailwind Starter Template - Ghostwind CSS : Tailwind Toolbox</title>
+    <title>Jahapy</title>
     <meta name="author" content="name" />
     <meta name="description" content="description here" />
     <meta name="keywords" content="keywords,here" />
@@ -27,11 +27,19 @@
       <div
         class="container max-w-4xl mx-auto pt-16 md:pt-32 text-center padding-bottom-35 px break-normal"
       >
-        <!--Title-->
-        <p class="text-white font-extrabold text-3xl md:text-5xl">JAHAPY</p>
-        <p class="text-xl md:text-2xl text-gray-500 padding-top-35">
-          Conoce Paraguay de nuestra mano
-        </p>
+        <!--div padre-->
+        <div class="flex flex-row mt-2 justify-center">
+          <img src="static/logo.png" alt="" class="w-16 mx-4">
+          <div class="flex flex-col text-star ">
+            <p class="text-white font-extrabold text-3xl md:text-5xl justify-star text-left">JAHAPY</p>
+            <p class="text-xl md:text-2xl text-gray-500 padding-top-35">
+              Conocè Paraguay de nuestra mano
+            </p>
+          </div>
+          
+        </div>
+
+        
       </div>
     </div>
 
@@ -108,145 +116,195 @@
             </a>
           </div>
           <!--Posts Container-->
-          <div class="flex flex-wrap justify-between pt-12 -mx-6">
-            <!--1/3 col -->
-            <div
-              class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink"
-            >
-              <div
-                class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
-              >
-                <a
-                  href="#"
-                  class="flex flex-wrap no-underline hover:no-underline"
-                >
-                  <img
-                    src="https://visitparaguay.travel/v1/upload/destino_imagen/28660921_04437189_579F9F7F0FDC6_S.jpg"
-                    class="h-64 w-full rounded-t pb-6"
-                  />
-                  <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                    Central
-                  </p>
-                  <div class="w-full font-bold text-xl text-gray-900 px-6">
-                    Capital Aregua
-                  </div>
-                  <p class="text-gray-800 font-serif text-base px-6 mb-5">
-                    El depeartamento central e sconocido por albergar mas de 35
-                    mususeos, 30 centros historicos y 29 espacios recreativos.
-                  </p>
-                </a>
+          <d
+          iv class="mx-auto w-full md:w-4/5 px-4">
+            <div class="container my-8">
+              <div class="flex justify-between items-center mb-4">
+                <h2 class="text-3xl font-medium">
+                  Departamentos del Paraguay
+                  <a href="#" class=""
+                    
+                  >
+                </h2>
+                
+                </div>
               </div>
               <div
-                class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"
-              ></div>
-            </div>
-
-            <!--1/3 col -->
-            <div
-              class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink"
-            >
-              <div
-                class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
+                id="scrollContainer"
+                class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8"
               >
-                <a
-                  href="#"
-                  class="flex flex-wrap no-underline hover:no-underline"
+                <div
+                  class="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg"
                 >
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Bas%C3%ADlica_de_Caacup%C3%A9.jpg"
-                    class="h-64 w-full rounded-t pb-6"
-                  />
-                  <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                    Cordillera
-                  </p>
-                  <div class="w-full font-bold text-xl text-gray-900 px-6">
-                    Capital Caacupe
-                  </div>
-                  <p class="text-gray-800 font-serif text-base px-6 mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                    at ip Aliquam at ipsum eu nunc commodo posuere et sit amet
-                    ligula.
-                  </p>
-                </a>
-              </div>
-              <div
-                class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"
-              ></div>
-            </div>
-
-            <!--1/3 col -->
-            <div
-              class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink"
-            >
-              <div
-                class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
-              >
-                <a
-                  href="#"
-                  class="flex flex-wrap no-underline hover:no-underline"
+                  <a href="#" class="space-y-4">
+                    <div class="aspect-w-16 aspect-h-9">
+                      <img
+                        class="object-cover shadow-md hover:shadow-xl rounded-lg"
+                        src="https://visitparaguay.travel/v1/upload/destino_imagen/28660921_04437189_579F9F7F0FDC6_S.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="px-4 py-2">
+                      <div class="text-lg leading-6 font-medium space-y-1">
+                        <h3 class="font-bold text-gray-800 text-3xl mb-2">
+                          Central
+                        </h3>
+                        <p>Capital Aregua</p>
+                      </div>
+                      <div class="text-lg">
+                        <p class="">
+                          El departamento Central es el mas pequeño del pais pero, el mas poblado. Se caracteriza por poseer diversas actitividades culturales y una variedad de interesantes opciones como parques naturales, restaurantes, bares, museos para el disfrute de sus locales como tambien de los turistas.
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg"
                 >
-                  <img
-                    src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/57/6f/80.jpg"
-                    class="h-64 w-full rounded-t pb-6"
-                  />
-                  <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                    Paraguari
-                  </p>
-                  <div class="w-full font-bold text-xl text-gray-900 px-6">
-                    Paraguari
-                  </div>
-                  <p class="text-gray-800 font-serif text-base px-6 mb-5">
-                    Lorem ipsum eu nunc commodo posuere et sit amet ligula.
-                  </p>
-                </a>
-              </div>
-              <div
-                class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"
-              ></div>
-            </div>
-
-            <!--1/2 col -->
-            <div
-              class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink"
-            >
-              <div
-                class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
-              >
-                <a
-                  href="#"
-                  class="flex flex-wrap no-underline hover:no-underline"
+                  <a href="#" class="space-y-4">
+                    <div class="aspect-w-16 aspect-h-9">
+                      <img
+                        class="object-cover shadow-md hover:shadow-xl rounded-lg"
+                        src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Reserva_Mbatovi.Puente_colgante.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="px-4 py-2">
+                      <div class="text-lg leading-6 font-medium space-y-1">
+                        <h3 class="font-bold text-gray-800 text-3xl mb-2">
+                          Paraguari
+                        </h3>
+                        <p>Capital Paraguari</p>
+                      </div>
+                      <div class="text-lg">
+                        <p class="">
+                          Paraguarí es el noveno departamento, su capital es Paraguarí y su ciudad más poblada es Carapeguá. Este departamento tiene lugares muy interesantes marcados por una larga historia y una rica variedad de tierras en su paisaje. Además posee atractivos como el Lago Ypoá y numerosos cerros que permiten la realización de turismo de aventura.
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg"
                 >
-                  <img src="" class="h-full w-full rounded-t pb-6" />
-                  <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                    GETTING STARTED
-                  </p>
-                  <div class="w-full font-bold text-xl text-gray-900 px-6">
-                    Lorem ipsum dolor sit amet.
-                  </div>
-                  <p class="text-gray-800 font-serif text-base px-6 mb-5">
-                    Lorem ipsum eu nunc commodo posuere et sit amet ligula.
-                  </p>
-                </a>
-              </div>
-              <div
-                class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"
-              >
-                <div class="flex items-center justify-between">
-                  <img
-                    class="w-8 h-8 rounded-full mr-4 avatar"
-                    data-tippy-content="Author Name"
-                    src="http://i.pravatar.cc/300"
-                    alt="Avatar of Author"
-                  />
-                  <p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
+                  <a href="#" class="space-y-4">
+                    <div class="aspect-w-16 aspect-h-9">
+                      <img
+                        class="object-cover shadow-md hover:shadow-xl rounded-lg"
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Bas%C3%ADlica_de_Caacup%C3%A9.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="px-4 py-2">
+                      <div class="text-lg leading-6 font-medium space-y-1">
+                        <h3 class="font-bold text-gray-800 text-3xl mb-2">
+                          Coordillera
+                        </h3>
+                        <p>Capital Caacupe</p>
+                      </div>
+                      <div class="text-lg">
+                        <p class="">
+                          Conocido por sus grandes bellezas naturales. Posee serranías y numerosas arroyos que constituyen un deleite para el esparcimiento y el turismo interno. Situado en el centro oeste de la Región Oriental. En Cordillera se encuentra la Capital de la Fe, Caacupé, ciudad que congrega a más de un millón y medio de personas cada 8 de Diciembre en el día del festejo de la Virgen.
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg"
+                >
+                  <a href="#" class="space-y-4">
+                    <div class="aspect-w-16 aspect-h-9">
+                      <img
+                        class="object-cover shadow-md hover:shadow-xl rounded-lg"
+                        src="https://cdn.elnacional.com.py/2020/12/trinidad_mision_jesuitica_trinidad_del_parana2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="px-4 py-2">
+                      <div class="text-lg leading-6 font-medium space-y-1">
+                        <h3 class="font-bold text-gray-800 text-3xl mb-2">
+                          Itapua
+                        </h3>
+                        <p>Capital Encarnacion</p>
+                      </div>
+                      <div class="text-lg">
+                        <p class="">
+                          Este departamento conocido como el granero de Paraguay y se destaca por las fiestas de carnaval que se llevan a cabo cada año en el mes de febrero, lo cual en verano atrae a miles de personas de todo el país y en los últimos años también a extranjeros. Cuenta con un zoológico donde se puede apreciar muchas especies en peligro de extinción, una extensa costanera con playas de aguas claras.
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg"
+                >
+                  <a href="#" class="space-y-4">
+                    <div class="aspect-w-16 aspect-h-9">
+                      <img
+                        class="object-cover shadow-md hover:shadow-xl rounded-lg"
+                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/bd/4b/3c/vizinha-ao-museu-a-igreja.jpg?w=600&h=400&s=1"
+                        alt=""
+                      />
+                    </div>
+                    <div class="px-4 py-2">
+                      <div class="text-lg leading-6 font-medium space-y-1">
+                        <h3 class="font-bold text-gray-800 text-3xl mb-2">
+                          Misiones
+                        </h3>
+                        <p>Capital San Juan Bautista</p>
+                      </div>
+                      <div class="text-lg">
+                        <p class="">
+                          Misiones es el departamento que posee unos de los principales atractivos turísticos y lo constituyen las playas formadas a orillas de los ríos Paraná y Tebicuary. 
+                          También posee como actividad económica básica la ganadería vacuna.
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg"
+                >
+                  <a href="#" class="space-y-4">
+                    <div class="aspect-w-16 aspect-h-9">
+                      <img
+                        class="object-cover shadow-md hover:shadow-xl rounded-lg"
+                        src="https://media.ultimahora.com/p/e18fdc085df2c9481e690ff398adb23d/adjuntos/161/imagenes/010/869/0010869329/puentejpg.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="px-4 py-2">
+                      <div class="text-lg leading-6 font-medium space-y-1">
+                        <h3 class="font-bold text-gray-800 text-3xl mb-2">
+                          Ñeembucu
+                        </h3>
+                        <p>Pilar</p>
+                      </div>
+                      <div class="text-lg">
+                        <p class="">
+                          Este departamento se encuentra rodeado por los ríos Paraguay y Paraná por lo que es un destino ideal para el turismo de pesca deportiva, paseos de observación de la rica vida silvestre y bellos paisajes. Ademas de sitios históricos como Paso de Patria, Estero Bellaco, Humaitá, Curupayty, Sauce y Boquerón, lugares donde se desarrollaron la Guerra de la Triple Alianza. Tambien podemos encontrar el Museo de Pilar y muchos otros edificios y casas antiguas.
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
+      
+            <!--1/2 col -->
+           
 
             <!--1/2 col -->
             <div
-              class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink"
+              class="w-full p-6 flex flex-col flex-grow flex-shrink"
             >
               <div
                 class="flex-1 flex-row bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
@@ -273,21 +331,13 @@
               <div
                 class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"
               >
-                <div class="flex items-center justify-between">
-                  <img
-                    class="w-8 h-8 rounded-full mr-4 avatar"
-                    data-tippy-content="Author Name"
-                    src="http://i.pravatar.cc/300"
-                    alt="Avatar of Author"
-                  />
-                  <p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
-                </div>
+                
               </div>
             </div>
 
             <!--2/3 col -->
             <div
-              class="w-full md:w-2/3 p-6 flex flex-col flex-grow flex-shrink"
+              class="w-full p-6 flex flex-row flex-row justify-between"
             >
               <div
                 class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
@@ -297,38 +347,29 @@
                   class="flex flex-wrap no-underline hover:no-underline"
                 >
                   <img
-                    src="https://source.unsplash.com/collection/325867/800x600"
+                    src="https://visitparaguay.travel/v1/upload/experiencia_circuito_alternativo_imagen/21724453_09002936_588F45A16F6B7_B.jpg"
                     class="h-full w-full rounded-t pb-6"
                   />
                   <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                    GETTING STARTED
+                    Tenes que visitar
                   </p>
                   <div class="w-full font-bold text-xl text-gray-900 px-6">
-                    Lorem ipsum dolor sit amet.
+                    Museo del barro 
                   </div>
                   <p class="text-gray-800 font-serif text-base px-6 mb-5">
-                    Lorem ipsum eu nunc commodo posuere et sit amet ligula.
+                    El Museo del Barro, en Asunción, está dedicado a todo tipo de artes visuales que ponen de manifiesto la diversidad cultural y étnica de Paraguay.
+                    Es una institución de acceso libre y gratuito cuyo objetivo principal es poner a disposición diversas expresiones visuales del Paraguay e Iberoamericana, poniendo de manifiesto la diversidad cultural y étnica del país.
                   </p>
                 </a>
               </div>
               <div
                 class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6"
               >
-                <div class="flex items-center justify-between">
-                  <img
-                    class="w-8 h-8 rounded-full mr-4 avatar"
-                    data-tippy-content="Author Name"
-                    src="http://i.pravatar.cc/300"
-                    alt="Avatar of Author"
-                  />
-                  <p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
-                </div>
+                
               </div>
-            </div>
-
-            <!--1/3 col -->
-            <div
-              class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink"
+              <div
+              class="w-full md:w-1/3
+               flex flex-col flex-grow flex-shrink"
             >
               <div
                 class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg"
@@ -361,12 +402,135 @@
               </div>
             </div>
           </div>
+            </div>
+
+            <!--1/3 col -->
+            
           <!--/ Post Content-->
         </div>
 
         <!--Subscribe-->
         <div
           class="container font-sans bg-green-100 rounded mt-8 p-4 md:p-24 text-center"
+          <div class="bg-[#F5C3C3]">
+            <div class="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
+              <div class="space-y-8 sm:space-y-12">
+                <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
+          
+                  <h2 id="ending" class="text-3xl text-[#074D44] font-bold tracking-tight sm:text-4xl sm:tracking-tight">Nuestro team</h2>
+          
+                  <p class="text-xl text-gray-800">DigiFem nace con el propósito de mejorar la administración, gestión y planificación
+                    de mujeres emprendedoras, que buscan impulsar sus negocios.</p>
+                </div>
+                <ul role="list" class="mx-auto grid grid-cols-5 gap-x-4 gap-y-8 sm:grid-cols-5 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-5">
+                  <li>
+                    <div class="space-y-4">
+                      <img class="mx-auto h-20 w-20 rounded-full lg:w-24 lg:h-24" src="/foto team/pengu.jpeg" alt="">
+                      <div class="space-y-2">
+                        <div class="text-xs text-[#342023] font-bold lg:text-sm">
+                          <h3>Penguin</h3>
+                          <p class="text-[#074D44] font-medium">Founder</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="space-y-4">
+                      <img class="mx-auto h-20 w-20 rounded-full lg:w-24 lg:h-24" src="/foto team/maxi.jpeg" alt="">
+                      <div class="space-y-2">
+                        <div class="text-xs text-[#342023] font-bold lg:text-sm">
+                          <h3>Maxi</h3>
+                          <p class="text-[#074D44] font-medium">Full stack Developer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+          
+                  <!-- More people... -->
+                  <li>
+                    <div class="space-y-4">
+                      <img class="mx-auto h-20 w-20 rounded-full lg:w-24 lg:h-24" src="/foto team/alanna.jpeg" alt="">
+                      <div class="space-y-10">
+                        <div class="text-xs text-[#342023] font-bold lg:text-sm">
+                          <h3>Alana</h3>
+                          <p class="text-[#074D44] font-medium">Back-end Developer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="space-y-4">
+                      <img class="mx-auto h-20 w-20 rounded-full lg:w-24 lg:h-24" src="/foto team/ivonne.jpeg" alt="">
+                      <div class="space-y-10">
+                        <div class="text-xs text-[#342023] font-bold lg:text-sm">
+                          <h3>Ivonne Livieres</h3>
+                          <p class="text-[#074D44] font-medium">Back-end Developer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="space-y-4">
+                      <img class="mx-auto h-20 w-20 rounded-full lg:w-24 lg:h-24" src="" alt="">
+                      <div class="space-y-10">
+                        <div class="text-xs text-[#342023] font-bold lg:text-sm">
+                          <h3>Wendy Solis&oacute;n</h3>
+                          <p class="text-[#074D44] font-medium">Front-end Developer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="space-y-4">
+                      <img class="mx-auto h-20 w-20 rounded-full lg:w-24 lg:h-24" src="/static/foto team/Nati.jpeg" alt="">
+                      <div class="space-y-10">
+                        <div class="text-xs text-[#342023] font-bold lg:text-sm">
+                          <h3>Natalia Muñoz</h3>
+                          <p class="text-[#074D44] font-medium">Front-end Developer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="space-y-4">
+                      <img class="mx-auto h-20 w-20 rounded-full lg:w-24 lg:h-24" src="/static/foto team/jaz.jpeg" alt="">
+                      <div class="space-y-10">
+                        <div class="text-xs text-[#342023] font-bold lg:text-sm">
+                          <h3>Laura Acosta&aacute;ez</h3>
+                          <p class="text-[#074D44] font-medium">Front-end Developer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="space-y-4">
+                      <img class="mx-auto h-20 w-20 rounded-full lg:w-24 lg:h-24" src="/static/foto team/tam.jpeg" alt="">
+                      <div class="space-y-10">
+                        <div class="text-xs text-[#342023] font-bold lg:text-sm">
+                          <h3>Tamara Canterot</h3>
+                          <p class="text-[#074D44] font-medium">Coach & Front-end Developer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="space-y-4">
+                      <img class="mx-auto h-20 w-20 rounded-full lg:w-24 lg:h-24" src="/static/foto team/jaz.jpeg" alt="">
+                      <div class="space-y-10">
+                        <div class="text-xs text-[#342023] font-bold lg:text-sm">
+                          <h3>Jazmin Gamarra</h3>
+                          <p class="text-[#074D44] font-medium">Coach & Full stack Developer </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          
         >
           <div class="w-full text-center pt-4">
             <form action="#"></form>
@@ -374,25 +538,7 @@
         </div>
         <!-- /Subscribe-->
 
-        <!--Author-->
-        <div class="flex w-full items-center font-sans p-8 md:p-24">
-          
-          <div class="flex-1">
-            <p class="text-base font-bold text-base md:text-xl leading-none">
-              Ghostwind CSS
-            </p>
-            <p class="text-gray-600 text-xs md:text-base">
-              Tailwind CSS version of Ghost's Casper theme by
-            </p>
-          </div>
-          <div class="justify-end">
-            <button
-              class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full"
-            >
-              Read More
-            </button>
-          </div>
-        </div>
+       
         <!--/Author-->
       </div>
     </div>
