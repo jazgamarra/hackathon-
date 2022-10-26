@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_d8701686c7ccc60d044ea18dbed18566 {
+                #map_5632b01bb47f3347a95a37ae41fabf1c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_d8701686c7ccc60d044ea18dbed18566" ></div>
+            <div class="folium-map" id="map_5632b01bb47f3347a95a37ae41fabf1c" ></div>
         
 </body>
 <script>    
     
-            var map_d8701686c7ccc60d044ea18dbed18566 = L.map(
-                "map_d8701686c7ccc60d044ea18dbed18566",
+            var map_5632b01bb47f3347a95a37ae41fabf1c = L.map(
+                "map_5632b01bb47f3347a95a37ae41fabf1c",
                 {
                     center: [-25.302148501254027, -57.580945507743685],
                     crs: L.CRS.EPSG3857,
@@ -55,9 +55,65 @@
 
         
     
-            var tile_layer_54f94584a2618cf6b67c07449f1d0c7c = L.tileLayer(
+            var tile_layer_197f82154a7b7f7b363037f75724cd77 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_d8701686c7ccc60d044ea18dbed18566);
+            ).addTo(map_5632b01bb47f3347a95a37ae41fabf1c);
+        
+    
+            var marker_05167d6a6468bfb905fa25997e53e2a9 = L.marker(
+                [-23.715078543990053, -57.63004886525758],
+                {}
+            ).addTo(map_5632b01bb47f3347a95a37ae41fabf1c);
+        
+    
+            var icon_f4f83038becb9935a561e28e62ff4ac0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_05167d6a6468bfb905fa25997e53e2a9.setIcon(icon_f4f83038becb9935a561e28e62ff4ac0);
+        
+    
+        var popup_9db17650dd21fb193bcab8c3644b0ed1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_834809b26dd09d39116df49bf06dad60 = $(`<div id="html_834809b26dd09d39116df49bf06dad60" style="width: 100.0%; height: 100.0%;">             <img src="https://assets.website-files.com/5b364d632fe85b2050b2ceb2/5d1e79e5fdd1ef1fd16b1281_panteon.jpg" width="100" class="center">             <h1>Paseo de brujas</h1>             <p>paseo de brujas infelices </p>             </div>`)[0];
+            popup_9db17650dd21fb193bcab8c3644b0ed1.setContent(html_834809b26dd09d39116df49bf06dad60);
+        
+
+        marker_05167d6a6468bfb905fa25997e53e2a9.bindPopup(popup_9db17650dd21fb193bcab8c3644b0ed1)
+        ;
+
+        
+    
+    
+            var marker_ba1898a262672c3227e6f290c3cfdb65 = L.marker(
+                [-23.864614379750115, -57.820956364446616],
+                {}
+            ).addTo(map_5632b01bb47f3347a95a37ae41fabf1c);
+        
+    
+            var icon_fafb152aef1ef8b723e15d4a4b0b2185 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ba1898a262672c3227e6f290c3cfdb65.setIcon(icon_fafb152aef1ef8b723e15d4a4b0b2185);
+        
+    
+        var popup_d5a7c060f4ab2e164310cea7b8f0c9e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2de52c0f6e81f8ab815c7eb6cbe0c0c = $(`<div id="html_b2de52c0f6e81f8ab815c7eb6cbe0c0c" style="width: 100.0%; height: 100.0%;">             <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgWFRYYGBgaHBwaGhocHBocHBwaGhoaGhoaGBodIS4lHCErIRoZJjgmKy8xNTU1GiU7QDs0Py40NTEBDAwMEA8QHxISHzQsJSw1OD82NDE3PTQ0NDQ0NDQ0NDQ0NDQ3NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIALcBEwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAAIDBQYBB//EAEEQAAEDAgMEBwcDAgUEAgMAAAEAAhEDIQQSMQVBUZEGImFxgaHRExQVMlKxwULh8JKiYnKC0vEjU7LCQ6MWJDP/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQMCBAX/xAAqEQACAgEDBAICAgIDAAAAAAAAAQIRAxIhUQQTMUEiYRSRgaFCcTLw8f/aAAwDAQACEQMRAD8A8tY8FOhBAneCpmVT3oAIY24RDQh6LwSIRbQkAmtT2010BPAQMaKQTvYKRrVIGrIAxongmGmj2sTjTnVAytDQmVqciysnYUKM4M8U7Ao5RmHdOXsICdXwDw6zZngpMHgKgcJbA7x6p2KggqRqnbg+J5KVuFb2lKxgcLvspVg2g0bk7IlYUVvurk1+FIVmWjinU8O54JY0uaNTYDzMpSmo7tjjFy2SKU0guFgVlUiDEFWfQttP3g+1ywBbNxncs5J6YOXA4Q1SUTMPpxqFFUFl6Z09wlN2HDmNYx4c2IGWWzB1AnVeeVMDUg2nuIWcObuR1VRrLj0OitLoTJJPEov4dVP6DzA/KscHs0sEu+b7dgVrJUD4LCZesfm+yMDJ3KYUU72SQwR9IKN9BHeyTTSQBWvoFQOYRuVuaa6KadgUbgoXhXtTDNO5CvwIOkhFioqkkf7geKSYFe1PDU8MT2tQIa1vYpWhdaE8BAHWqRgTWqRqBjmqVqY1TNCyB1qc0J7Au00DEGrrQnhPAQBHC" width="100" class="center">             <h1>Panteon de los heroes </h1>             <p>El Panteón Nacional de los Héroes y Oratorio de la Virgen Nuestra Señora Santa María de la Asunción es un ícono de la capital paraguaya que está ubicado en pleno microcentro de la ciudad de Asunción, en la esquina de las calles Palma y Chile. Nuestra Señora Santa María de la Asunción, es Patrona del Paraguay y Mariscala de sus Ejércitos.</p>             </div>`)[0];
+            popup_d5a7c060f4ab2e164310cea7b8f0c9e7.setContent(html_b2de52c0f6e81f8ab815c7eb6cbe0c0c);
+        
+
+        marker_ba1898a262672c3227e6f290c3cfdb65.bindPopup(popup_d5a7c060f4ab2e164310cea7b8f0c9e7)
+        ;
+
+        
+    
+    
+            var circle_078c5095777745ec8b285e31513bc4e0 = L.circle(
+                [-23.864614379750115, -57.820956364446616],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_5632b01bb47f3347a95a37ae41fabf1c);
         
 </script>
