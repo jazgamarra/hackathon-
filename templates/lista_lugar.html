@@ -4,15 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Lista de Lugares</title>
   </head>
   <body>
-    {%for lugar in lista%}
-    <h2>{{lugar.nombre}}</h1>
-    <p>{{lugar.descripcion}}</p>
-    <p>[{{lugar.departamento}}]</p>
-
-    <hr />
-    {%endfor%}
+    <h1>LISTA COMPLETA</h1>
+    <div class="flex flex-row flex-wrap">
+      {%for lugar in lista%}
+      <div
+        class="items-center bg-white rounded-lg border shadow-md flex flex-row md:max-w-xl hover:bg-gray-100 w-1/4 h-4/5"
+      >
+        <img
+          class="object-cover h-40 w-40 rounded-t-lg md:rounded-none md:rounded-l-lg"
+          src="{{lugar.imagen}}"
+          alt=""
+        />
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5
+            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+          >
+            {{lugar.nombre}}
+          </h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            {{lugar.descripcion}}
+          </p>
+        </div>
+      </div>
+      <hr />
+      {%endfor%}
+    </div>
   </body>
 </html>

@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_e18f4fa71f5c5a48d59a62e4f50e859c {
+                #map_b85e032b079341adfcbdfe96e392a314 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_e18f4fa71f5c5a48d59a62e4f50e859c" ></div>
+            <div class="folium-map" id="map_b85e032b079341adfcbdfe96e392a314" ></div>
         
 </body>
 <script>    
     
-            var map_e18f4fa71f5c5a48d59a62e4f50e859c = L.map(
-                "map_e18f4fa71f5c5a48d59a62e4f50e859c",
+            var map_b85e032b079341adfcbdfe96e392a314 = L.map(
+                "map_b85e032b079341adfcbdfe96e392a314",
                 {
                     center: [-25.302148501254027, -57.580945507743685],
                     crs: L.CRS.EPSG3857,
@@ -55,9 +55,40 @@
 
         
     
-            var tile_layer_609c7b69e7e6708b0a4d76af3c0a9c32 = L.tileLayer(
+            var tile_layer_9f310b426b485a32d01c44483dfdfb41 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_e18f4fa71f5c5a48d59a62e4f50e859c);
+            ).addTo(map_b85e032b079341adfcbdfe96e392a314);
+        
+    
+            var marker_2357fdd0df099c370b12592ee35abed7 = L.marker(
+                [-23.715078543990053, -57.63004886525758],
+                {}
+            ).addTo(map_b85e032b079341adfcbdfe96e392a314);
+        
+    
+            var icon_56b0458ad1c09bfcba9cad1319ad7e15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart-empty", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2357fdd0df099c370b12592ee35abed7.setIcon(icon_56b0458ad1c09bfcba9cad1319ad7e15);
+        
+    
+        var popup_af61e61eb50c8e647c9781e3e6b6ad9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_078aac427af6cddb95ff33f1f6a0bf32 = $(`<div id="html_078aac427af6cddb95ff33f1f6a0bf32" style="width: 100.0%; height: 100.0%;">             <img src="https://assets.website-files.com/5b364d632fe85b2050b2ceb2/5d1e79e5fdd1ef1fd16b1281_panteon.jpg" width="100" class="center">             <h1>Paseo de brujas</h1>             <p>paseo de brujas infelices </p>             </div>`)[0];
+            popup_af61e61eb50c8e647c9781e3e6b6ad9f.setContent(html_078aac427af6cddb95ff33f1f6a0bf32);
+        
+
+        marker_2357fdd0df099c370b12592ee35abed7.bindPopup(popup_af61e61eb50c8e647c9781e3e6b6ad9f)
+        ;
+
+        
+    
+    
+            var circle_01e1d9214750fb3eda187e269a80e90a = L.circle(
+                [-23.715078543990053, -57.63004886525758],
+                {"bubblingMouseEvents": true, "color": "none", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 120, "stroke": true, "weight": 3}
+            ).addTo(map_b85e032b079341adfcbdfe96e392a314);
         
 </script>

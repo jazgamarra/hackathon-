@@ -127,7 +127,7 @@ def vista_filtrada():
 
 @app.route('/', methods=['GET','POST'])
 def index():
-     #definir en que parte del mapa el zoom
+    #definir en que parte del mapa el zoom
     mapa=folium.Map(location=[-25.302148501254027, -57.580945507743685], zoom_start=12)
     #post es que le llega algo del front al back
     if request.method=='POST':
@@ -161,32 +161,20 @@ def index():
 
     #guardamos en un html distinto
     mapa.save('templates/vista_filtrada.html')
+    
+    # crear una lista con todos los lugares 
+    lista=LugaresCulturales.query.all()
         
     # retornamos el index 
-    return render_template('index.html')
+    return render_template('index.html', lista=lista)
  
 @app.route('/lista-lugares')
 def listar():
     lista =  LugaresCulturales.query.all() 
     return render_template('lista_lugar.html', lista=lista)
-        
-def lista_por_dpto():
-    coordillera = []
-    central = []
-    paraguari = []
-    lista =  LugaresCulturales.query.all() 
-    
-    for lugar in lista:
-        if lugar.departamento == 'central': 
-            central.append(lugar)     
-        elif lugar.departamento == 'coordillera': 
-            coordillera.append(lugar)
-        elif lugar.departamento == 'paraguari': 
-            paraguari.append(lugar)
-    
-    return [central, paraguari, coordillera]
-    
+
     
 if __name__ == '__main__':
     db.create_all()
     app.run(debug=True)
+    
