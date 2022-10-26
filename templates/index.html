@@ -305,22 +305,21 @@
               <div
               class="w-full p-6 flex flex-col flex-grow flex-shrink">
               <div
-                class="flex flex-row flex-wrap justify-center mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+                class="flex flex-row flex-wrap justify-center mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6 h-5/6">
 
                 {% for lugar in lista %}
-                  <div class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 m-3.5">
-                    
-                    <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="{{lugar.imagen}}" alt="">
-                    <div class="flex flex-col justify-between p-4 leading-normal">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                          {{lugar.nombre}}</h5>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                          {{lugar.descripcion}}</p>
-                        
-                          
-                    </div>
-                  </div> 
-                {% endfor %}
+                    <div class="flex flex-wrap justify-center justify-evenly mx-auto mt-4 bg-slate-200 ">
+                      <figure class="rounded-xl p-2 m-2 w-64">
+                        <img src="{{lugar.imagen}}" alt="" class="w-64 rounded-xl" />
+                        <figcaption class="">
+                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            {{lugar.nombre}}</h5>
+                          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            {{lugar.descripcion}}</p>
+                        </figcaption>
+                      </figure>
+                    </div> 
+                {% endfor %} 
 
               </div>
             </div> 
