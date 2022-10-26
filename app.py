@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 import folium
 from geopy.geocoders import Nominatim
-from matplotlib.container import Container
 
 app=Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
@@ -28,10 +27,6 @@ class LugaresCulturales(db.Model):
         self.longitud=longitud
         self.departamento=departamento
 
-'''
-{'darkred', 'green', 'blue', 'darkpurple', 'lightred', 'pink', 'lightblue', 'gray', 'cadetblue', 
-'darkgreen', 'lightgreen', 'red', 'darkblue', 'white', 'orange', 'lightgray', 'black', 'beige', 'purple'}.
-'''
 
 @app.route('/mapa')
 def crear_mapa():
