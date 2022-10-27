@@ -1,6 +1,17 @@
 # _PROYECTO JAHAPY_
 
 # Descripcion
+Proyecto presentado en la Hackathon de agosto en Penguin Academy. El tema fue "Generar herramientas tecnologicas que fomenten o mejoren la experiencia turistica en Paraguay". Abordamos la problematica de la desinformacion, y nuestra solucion propone el conocimiento y geolocalizacion de lugares culturales para fomentar que la gente conozca nuestro pais a traves de nuestra cultura. 
+
+El proyecto cuenta con dos ejes principale, el mapa que permite localizar en donde quedan los museos y espacios historicos de nuestro pais, y una seccion infromativa que nos habla de la riqueza cultural de cada uno de los departamentos, asi como la descripcion de los lugares disponibles en el mapa. 
+
+# Tecnologias 
+
+- Python
+- Folium 
+- SQL Alchemy 
+- HTML
+- Tailwind CSS
 
 # Instalacion
 
@@ -15,6 +26,7 @@
 # Archivos.
 
 ## Archivos HTML.
+`index.html` Pagina principal del proyecto. 
 
 `form_categorias.html`
 Contiene el formulario para filtrar los lugares culturales por categorias y el iframe al mapa con la vista filtrada, que se genero en `vista_filtrada.html` .
@@ -26,11 +38,12 @@ Genera una lista de todos los lugares culturales guardados en la base de datos.
 Contiene un formulario para cargar los lugares culturales a la base de datos.
 
 `mapa.html`
-Genera el mapa con marcadores en todas las posiciones guardadas en la base de datos.
+Genera un mapa con marcadores en todas las posiciones guardadas en la base de datos.
 
 ## Endpoints.
 
-- `/` Renderiza `mapa.html`
+- `/` Renderiza `index.html`
+- `/mapa` Renderiza `mapa.html`
 - `/registro` Renderiza `mapa_registro.html`
 - `/lista-lugares` Renderiza
 - `/filtro` Renderiza `form_categorias.html`
