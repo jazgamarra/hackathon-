@@ -3,7 +3,7 @@
 # Descripcion
 Proyecto presentado en la Hackathon de octubre en Penguin Academy. El tema fue "Generar herramientas tecnologicas que fomenten o mejoren la experiencia turistica en Paraguay". Abordamos la problematica de la desinformacion, y nuestra solucion propone el conocimiento y geolocalizacion de lugares culturales para fomentar que la gente conozca nuestro pais a traves de nuestra cultura. 
 
-El proyecto cuenta con dos ejes principale, el mapa que permite localizar en donde quedan los museos y espacios historicos de nuestro pais, y una seccion infromativa que nos habla de la riqueza cultural de cada uno de los departamentos, asi como la descripcion de los lugares disponibles en el mapa. 
+El proyecto cuenta con dos ejes principales, el mapa que permite localizar en donde quedan los museos y espacios historicos de nuestro pais, y una seccion infromativa que nos habla de la riqueza cultural de cada uno de los departamentos, asi como la descripcion de los lugares disponibles en el mapa. 
 
 # Tecnologias 
 
@@ -53,11 +53,11 @@ Genera un mapa con marcadores en todas las posiciones guardadas en la base de da
 ## Integrantes
 
 - Laura Acosta
-- Cynthia
+- Cynthia Aveiro
 - Wendy Solis
 - Natalia Muñoz
 - Ivonne Livieres
-- Alana
+- Alana Patiño
 
 ## Mentoras
 
